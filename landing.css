@@ -1,0 +1,146 @@
+@import url('https://fonts.google.com/noto/specimen/Noto+Serif');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 30px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 27px;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.navbar a:hover{
+    color:aqua;
+}
+.home{
+    height: 100vh;
+   background-color: black; 
+    background-size:auto;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content{
+    max-height: 600px;
+}
+
+.home-content h1{
+    font-size:30px;
+    font-weight: 700;
+    line-height: 1.2;
+    color:white;
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color:aqua;
+}
+.home-content p{
+    font-size: 15px;
+    margin: 20px 0 40px;
+    padding: 3px;
+    color:white;
+}
+.home-content .btn-box{
+    width:345px;
+    height:50px;
+    display: flex;
+    justify-content:space-between;
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:150px;
+    height:100%;
+    background:aquamarine;
+    border:2px solid aqua;
+    border-radius: 19px;
+    font-weight: 600;
+    color:white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-box a:nth-child(1){
+    background: transparent;
+    color: white;
+}
+.btn-box a::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height:100%;
+    background:lightskyblue;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-sci{
+    position: absolute;
+    bottom:30px;
+    width:170px;
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    background: transparent;
+    border:2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    z-index: 1;
+    overflow:hidden;
+}
+.home-sci a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background:lightskyblue;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before{
+    width:100%;
+}
